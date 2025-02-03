@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administración</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h1>Acceso Administrativo</h1>
+        <input type="text" id="usuario" placeholder="Usuario"><br><br>
+        <input type="password" id="contrasena" placeholder="Contraseña"><br><br>
+        <button class="btn" onclick="login()">Ingresar</button>
+    </div>
+
+    <div class="container" id="adminPanel" style="display:none;">
+        <h1>Asignar Servicios/Eventos</h1>
+        <input type="text" id="nombre" placeholder="Nombre del Músico"><br><br>
+        <input type="date" id="fecha"><br><br>
+        <input type="text" id="servicio" placeholder="Servicio (opcional)"><br><br>
+        <input type="text" id="evento" placeholder="Evento (opcional)"><br><br>
+        <button class="btn" onclick="asignar()">Asignar</button>
+        <button class="btn" onclick="generarPDF()">Generar PDF</button><br><br>
+        <div id="vistaPrevia"></div>
+        <button class="btn" onclick="window.location.href='index.html'">Regresar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
